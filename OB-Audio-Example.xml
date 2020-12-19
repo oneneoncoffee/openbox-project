@@ -1,0 +1,17 @@
+<menu id="Audio-menu" label="Audio Settings">
+          <item label="Raise Volume +10%">
+             <action name="Execute"> 
+                <command>pactl set-sink-volume 0 +10%</command> 
+                </action>
+           </item>
+           <item label="Lower Volume -10%">
+             <action name="Execute">
+                <command>pactl set-sink-volume 0 -10%</command>
+                </action>
+           </item>
+           <item label="Audio Mute/Unmute">
+             <action name="Execute">
+               <command>pactl set-sink-mute 0 toggle</command>
+               </action>
+            </item>  
+  </menu>
